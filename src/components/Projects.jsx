@@ -1,6 +1,6 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
-import verismoThumb from '../assets/projects/VERISMO.png'
-import project2 from '../assets/projects/fnatic-site.png'
+import verismoThumb from '../assets/projects/VERISMO.webp'
+import project2 from '../assets/projects/fnatic-site.webp'
 
 const projects = [
   {
