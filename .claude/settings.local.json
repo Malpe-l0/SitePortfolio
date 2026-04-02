@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_figma_figma__get_design_context",
+      "Bash(npm create:*)",
+      "Bash(npx create-vite@latest . --template react --force)",
+      "Bash(npx create-vite@latest . --template react)",
+      "Bash(npx --yes create-vite@latest myapp --template react)",
+      "Bash(mv myapp/* .)",
+      "Bash(mv myapp/.* .)",
+      "Bash(rmdir myapp:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(npm run:*)",
+      "mcp__8db051e2-4bd2-4d7b-b1ca-f84821cf490e__deploy_to_vercel",
+      "Bash(vercel --version)",
+      "Bash(npm list:*)",
+      "Bash(npx vercel:*)",
+      "mcp__8db051e2-4bd2-4d7b-b1ca-f84821cf490e__list_teams",
+      "mcp__8db051e2-4bd2-4d7b-b1ca-f84821cf490e__list_projects",
+      "mcp__Windows-MCP__PowerShell"
+    ]
+  }
+}
