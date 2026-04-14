@@ -1,8 +1,29 @@
 import avatar from '../assets/Ritratto.jpeg'
+import FaultyTerminal from './FaultyTerminal/FaultyTerminal'
 
 export default function Hero() {
   return (
-    <section id="home" className="min-h-screen flex flex-col items-center justify-center pt-[82px] px-4">
+    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center pt-[82px] px-4">
+      {/* FaultyTerminal background */}
+      <div className="absolute inset-0 z-0">
+        <FaultyTerminal
+          scale={1}
+          digitSize={1.5}
+          scanlineIntensity={0.3}
+          glitchAmount={1}
+          flickerAmount={1}
+          noiseAmp={0}
+          chromaticAberration={0}
+          dither={0}
+          curvature={0.2}
+          tint="#ffffff"
+          mouseReact
+          mouseStrength={0.2}
+          brightness={1}
+        />
+      </div>
+      {/* Content overlay */}
+      <div className="relative z-10 flex flex-col items-center w-full">
       {/* Avatar */}
       <div className="mb-6">
         <img
@@ -47,6 +68,7 @@ export default function Hero() {
         >
           Scarica CV
         </a>
+      </div>
       </div>
     </section>
   )
