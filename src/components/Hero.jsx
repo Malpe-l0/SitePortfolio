@@ -23,7 +23,7 @@ export default function Hero() {
         />
       </div>
       {/* Bottom fade to page background */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 z-10 pointer-events-none"
+      <div className="absolute bottom-0 left-0 right-0 h-16 z-10 pointer-events-none"
         style={{ background: 'linear-gradient(to bottom, transparent, #161513)' }}
       />
       {/* Content overlay */}
