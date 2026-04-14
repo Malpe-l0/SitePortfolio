@@ -22,6 +22,10 @@ export default function Hero() {
           brightness={1}
         />
       </div>
+      {/* Bottom fade to page background */}
+      <div className="absolute bottom-0 left-0 right-0 h-40 z-10 pointer-events-none"
+        style={{ background: 'linear-gradient(to bottom, transparent, #161513)' }}
+      />
       {/* Content overlay */}
       <div className="relative z-10 flex flex-col items-center w-full">
       {/* Avatar */}
