@@ -34,19 +34,21 @@ export default function Projects() {
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative w-full max-w-[416px] h-[301px] rounded-[18px] overflow-hidden bg-[var(--card-color)] block"
+            className="group relative w-full max-w-[416px] h-[301px] rounded-[18px] overflow-hidden bg-[var(--card-color)] block cursor-pointer transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_12px_40px_rgba(0,0,0,0.6)]"
           >
             <img
               src={project.thumbnail}
               alt={project.title}
-              className="w-full h-[78%] object-cover rounded-t-[18px]"
+              className="w-full h-[78%] object-cover rounded-t-[18px] transition-transform duration-500 group-hover:scale-110"
             />
+            {/* dark overlay on hover */}
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 rounded-[18px]" />
             <div className="absolute bottom-0 left-0 right-0 h-[22%] flex items-center px-5 justify-between">
               <div>
                 <p className="text-[10px] text-[#c5c5c5] uppercase leading-tight">{project.subtitle}</p>
                 <p className="text-[19px] font-extrabold text-white uppercase leading-tight">{project.title}</p>
               </div>
-              <div className="w-7 h-7 flex items-center justify-center opacity-60 group-hover:opacity-100 transition-opacity">
+              <div className="w-7 h-7 flex items-center justify-center opacity-60 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
                 <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" className="w-5 h-5">
                   <path d="M7 17L17 7M17 7H7M17 7v10" />
                 </svg>
