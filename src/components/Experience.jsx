@@ -13,7 +13,7 @@ const experiences = [
   {
     logo: appleLogo,
     title: 'Progetto di Gruppo – Portale Web Istituzionale',
-    period: '2024',
+    period: '2025',
     description:
       "Sviluppo collaborativo di un portale web istituzionale con Django e Python per un progetto di cooperazione tra comuni siciliani. Ruolo: sviluppo frontend delle pagine e integrazione con il backend Django. Team di 4 persone, gestione del codice con Git (branch, pull request, merge).",
   },
