@@ -1,6 +1,7 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import verismoThumb from '../assets/projects/VERISMO.webp'
 import project2 from '../assets/projects/fnatic-site.webp'
+import balatrothumb from '../assets/projects/Balatro.png'
 
 const projects = [
   {
@@ -14,6 +15,12 @@ const projects = [
     subtitle: 'Clicca per visitare',
     thumbnail: project2,
     url: 'https://fnatic-site.vercel.app/',
+  },
+  {
+    title: 'BlackBalatro',
+    subtitle: 'Clicca per giocare',
+    thumbnail: balatrothumb,
+    url: 'https://reactfinale-gdm.vercel.app/',
   },
 ]
 
